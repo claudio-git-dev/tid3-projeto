@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CDN FONTES GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/imagens/default_transparent_1000x1000.png" alt="">
+        </div>
+        <ul class="menu">
+            <li  class="active">
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="historico.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Historico</span>
+                </a>
+            </li>
+        </ul>
+    </div> <!-- / SIDEBAR -->
+
+    <!-- Content -->
+    <div class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="user-info">
+                <!-- <img src="assets/imagens/img-user.jfif" alt=""> -->
+            </div>
+        </div>
+
+        <!-- Sensores do sistema -->
+        <section class="sensor-data">
+            <h2>Dados dos Sensores: </h2>
+            <div class="sensor-readings">
+                <div class="reading">
+                    <div class="reading-info">
+                        <div class="icon"><img src="assets/imagens/thermometer_24.png" alt=""></div>
+                        <div class="reading-title">
+                            <span class="title">Temperatura</span>
+                            <span class="title-value">25°C</span>
+                        </div> 
+                    </div>
+                    <div class="reading_footer">
+                        <p>Atualizado em: 30/03/2024 as 18:56</p>
+                    </div>                      
+                </div>
+
+                <div class="reading">
+                    <div class="reading-info">
+                        <div class="icon"><img src="assets/imagens/umidade.png" alt=""></div>
+                        <div class="reading-title">
+                            <span class="title">Umidade Ambiente</span> 
+                            <span class="title-value">60%</span>
+                        </div> 
+                    </div>
+                    <div class="reading_footer">
+                        <p>Atualizado em: 30/03/2024 as 18:56</p>
+                    </div>                      
+                </div>
+
+                <div class="reading">
+                    <div class="reading-info">
+                        <div class="icon"><img src="assets/imagens/umidade-3.png" alt=""></div>
+                        <div class="reading-title">
+                            <span class="title">Umidade de Solo</span>
+                            <span class="title-value">50%</span>
+                        </div> 
+                    </div>
+                    <div class="reading_footer">
+                        <p>Atualizado em: 30/03/2024 as 18:56</p>
+                    </div>                      
+                </div>
+
+                <div class="reading">
+                    <div class="reading-info">
+                        <div class="icon"><img src="assets/imagens/plantar.png" alt=""></div>
+                        <div class="reading-title">
+                            <span class="title">Condições de Plantio</span>
+                            <span class="title-value">Boa</span>
+                        </div> 
+                    </div>
+                    <div class="reading_footer">
+                        <p>Atualizado em: 30/03/2024 as 18:56</p>
+                    </div>                      
+                </div>
+            </div>
+        </section>
+         
+        <!-- Status do Sistema -->
+        <section class="sensor-data">
+            <h2>Status do Sistema: </h2>
+            <div class="sensor-readings">
+                <div class="reading-sensor-status">
+                    <div class="reading-info-status"> 
+                        <div class="reading-title-status">
+                            <span class="title-status">Sistema de Ventilação</span>
+                        </div> 
+                    </div>
+                    <div class="button-status on">
+                        <div class="icon-status"><img src="assets/imagens/danger.png" alt=""></div>
+                        <span class="title-status-btn">Ligado</span>
+                    </div>                       
+                </div>
+
+                <div class="reading-sensor-status">
+
+                    <div class="reading-info-status"> 
+                        <div class="reading-title-status">
+                            <span class="title-status">Sistema de Irrigação</span>
+                        </div> 
+                    </div>
+
+                    <div class="button-status off">
+                        <div class="icon-status"><img src="assets/imagens/danger.png" alt=""></div>
+                            <span class="title-status-btn"> Desligado</span>
+                        </div>                       
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Controles Do sistema  -->
+        <section class="controls">
+            <h2>Controles</h2>
+            <button class="control-btn">Ligar Sistema Ventilação</button>
+            <button class="control-btn">Ligar Sistema de Irrigação</button>
+        </section>     
+    </div> <!-- main-content -->
+
+</body>
+</html>
